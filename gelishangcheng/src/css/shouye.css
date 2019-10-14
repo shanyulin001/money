@@ -1,0 +1,675 @@
+body {
+    background: rgb(245, 245, 245);
+    position: relative;
+}
+
+
+/* 固定定位的右边楼层 */
+
+.fixfloor {
+    position: fixed;
+    width: 50px;
+    line-height: 60px;
+    top: 250px;
+    right: 30px;
+}
+
+.fixfloor li {
+    display: block;
+    border: 1px solid #dedede;
+    line-height: 34px;
+    color: #ed5759;
+    overflow: hidden;
+    margin-bottom: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*fixfloor-b为正常显示，fixfloor-n鼠标悬浮显示  */
+
+.fixfloor-n {
+    display: none;
+}
+
+.fixfloor-b {
+    display: block;
+}
+
+
+/* 头部区域 */
+
+.header-top {
+    width: 100%;
+    height: 35px;
+    background: #eeeeee;
+    min-width: 1200px;
+}
+
+
+/* 头部区域的中间部分 */
+
+.top_mid {
+    width: 1200px;
+    height: 35px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* 登录注册部分 */
+
+.top_mid_l {
+    /* color: red; */
+    width: auto;
+    float: left;
+    line-height: 35px;
+}
+
+#top_login_id a {
+    color: red;
+    padding: 0 10px;
+    line-height: 35px;
+}
+
+
+/* logo和购物车 */
+
+.LOGO {
+    width: 100%;
+    height: 110px;
+}
+
+.logocart {
+    width: 1200px;
+    margin: auto;
+    height: 110px;
+    position: relative;
+}
+
+
+/* logo */
+
+.logo {
+    height: 80px;
+    width: 174px;
+    position: absolute;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 购物车框 */
+
+.cart {
+    width: 140px;
+    height: 40px;
+    border: 1px solid #e4e4e4;
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    right: 220px;
+}
+
+.cart a {
+    display: block;
+    line-height: 40px;
+    text-indent: 10px;
+}
+
+
+/* 导航栏整体 */
+
+.Nav {
+    width: 100%;
+    height: 36px;
+}
+
+
+/* 导航中间部分 */
+
+.nav {
+    width: 1200px;
+    margin: auto;
+    font-family: "Verdana", "Arial", Microsoft Yahei, Arial;
+    font-weight: bold;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+}
+
+
+/* 红色背景全部商品分类框 */
+
+.nav h2 {
+    padding: 0 10px;
+    float: left;
+    height: 36px;
+    background: #f00;
+    line-height: 36px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+/*商品导航列表  */
+
+.list {
+    width: 174px;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    left: 0;
+    top: 36px;
+    z-index: 3;
+}
+
+.list li {
+    width: 142px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 32px;
+    overflow: hidden;
+}
+
+
+/* 隐藏区域的样式定位 */
+
+.classify {
+    display: none;
+    position: absolute;
+    left: 174px;
+    top: 0px;
+    width: 1024px;
+    height: 448px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.classify1,
+.classify2 {
+    width: 1024px;
+    height: 70px;
+}
+
+.classify1 h3,
+.classify2 h3 {
+    height: 70px;
+    line-height: 70px;
+    /* font-weight: normal; */
+    width: 150px;
+    padding: 0 20px;
+    float: left;
+}
+
+.classify1 ul,
+.classify2 ul {
+    height: 70px;
+    width: 800px;
+    float: left;
+    border-bottom: 1px dashed #333;
+}
+
+.classify1 ul li,
+.classify2 ul li {
+    height: 70px;
+    line-height: 70px;
+    width: 42px;
+    margin-right: 20px;
+    float: left;
+    color: #333;
+}
+
+
+/* 鼠标滑过隐藏区域显示 */
+
+.list li:hover {
+    background: #fff;
+    color: red;
+}
+
+.refrigerator:hover .classify {
+    display: block;
+}
+
+
+/* 导航ul栏 */
+
+.navlan {
+    height: 36px;
+    float: left;
+}
+
+.navlan li {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #424242;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.navlan li img {
+    width: 100%;
+    height: 100%;
+}
+
+.navlan li a:hover {
+    color: #747474;
+}
+
+
+/* 轮播图区域 */
+
+.bannar {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    /* background: rgba(24, 22, 22, 0.5); */
+}
+
+
+/* 轮播图大图片 */
+
+.pic {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.pic li {
+    width: 100%;
+    height: 450px;
+    float: left;
+    background-size: cover;
+}
+
+
+/* .pic li img {
+    width: 100%;
+    height: 100%;
+} */
+
+
+/* 轮播图下边的按钮 */
+
+.key {
+    position: absolute;
+    width: 130px;
+    height: 14px;
+    left: 42%;
+    bottom: 20px;
+}
+
+.key li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    opacity: 0.4;
+    cursor: pointer;
+    z-index: 3;
+}
+
+
+/* 轮播图变化时对应的按钮 */
+
+.active {
+    background: #eee;
+}
+
+
+/* 商品区域 */
+
+section {
+    width: 100%;
+    height: 1500px;
+}
+
+main {
+    width: 1200px;
+    height: 1500px;
+    margin: auto;
+}
+
+
+/* 热销推荐 */
+
+.hotsale {
+    width: 1200px;
+    height: 220px;
+}
+
+
+/* 所有的标题样式 */
+
+.floortittle {
+    font-size: 18px;
+    margin: 14px 0;
+    color: #757575;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+
+/* 图片ul和li */
+
+.hotsale ul {
+    width: 1200px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hotsale ul li {
+    width: 290px;
+    height: 180px;
+    float: left;
+    margin-right: 7px;
+}
+
+
+/* 商品栏 */
+
+
+/* 每日精选 */
+
+.shop {
+    width: 1200px;
+    height: 640px;
+}
+
+
+/* 图区 */
+
+.shopping {
+    width: 1200px;
+    height: 570px;
+}
+
+.shopping li {
+    height: 570px;
+    float: left;
+}
+
+
+/* 左边图 */
+
+.picleft {
+    width: 300px;
+    padding-right: 10px;
+}
+
+
+/* 中间图  */
+
+.piccenter {
+    width: 580px;
+    padding-right: 10px;
+}
+
+.piccentertop {
+    height: 280px;
+    width: 580px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.piccenterbl {
+    width: 285px;
+    height: 280px;
+    margin-right: 10px;
+    float: left;
+}
+
+.piccenterbr {
+    width: 285px;
+    height: 280px;
+    float: left;
+}
+
+
+/* 右边图 */
+
+.picright {
+    width: 290px;
+}
+
+.picrighttop {
+    width: 290px;
+    height: 280px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.picrightbot {
+    width: 290px;
+    height: 280px;
+    float: left;
+}
+
+
+/* 每个区域图片的格式大小 */
+
+.picleft img,
+.piccentertop img,
+.piccenterbl img,
+.piccenterbr img,
+.picrighttop img,
+.picrightbot img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 冰箱洗衣机区域 */
+
+.icebox {
+    width: 1200px;
+    height: 619px;
+}
+
+
+/* 标题内容 */
+
+.floornumber {
+    font-size: 14px;
+    font-family: "黑体";
+}
+
+
+/* 楼层 */
+
+.floornum {
+    width: 37px;
+    height: 26px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    background: #f90002;
+}
+
+
+/* 楼层的内容区域 */
+
+.iceboxdiv {
+    width: 1200px;
+    height: 567px;
+}
+
+
+/* 左边图 */
+
+.iceboxleft {
+    width: 210px;
+    height: 567px;
+    float: left;
+    position: relative;
+    margin-right: 12px;
+}
+
+.iceboxleftpic a,
+.iceboxcenter a {
+    display: block;
+}
+
+.iceboxleftpic a img,
+.iceboxcenter a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* 中间图 */
+
+.iceboxcenter {
+    width: 336px;
+    height: 567px;
+    margin-right: 11px;
+    float: left;
+    margin-right: 12px;
+}
+
+
+/* 右边图 */
+
+.iceboxright {
+    width: 630px;
+    height: 567px;
+    float: left;
+}
+
+
+/* 右边图ul和li列表 */
+
+.iceboxright ul li {
+    height: 280px;
+    width: 196px;
+    float: left;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 0 8px 10px;
+    padding: 3px, 5px, 0, 5px;
+}
+
+.iceboxleft:hover,
+.iceboxcenter:hover,
+.iceboxrightul li:hover {
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* 楼层列表图片 */
+
+.floorpic {
+    height: 200px;
+    width: 200px;
+}
+
+.floorpic img {
+    width: 190px;
+    height: 190px;
+}
+
+
+/* 列表的title*/
+
+.iceboxright ul li h4 {
+    color: #3e3a39;
+    font-size: 14px;
+    height: 17px;
+    margin-top: 6px;
+    word-break: break-all;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+
+/* 列表的介绍 */
+
+.iceboxright ul li p {
+    color: #979797;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    ;
+    margin-top: 2px;
+    word-break: break-all;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+
+/* 列表的价格 */
+
+.iceboxright ul li span {
+    color: #FF4D4F;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 16px;
+    box-sizing: border-box;
+    padding: 0 13px;
+}
+
+.iceboxright ul li h4,
+.iceboxright ul li p,
+.iceboxright ul li span {
+    width: 100%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* 底部的大图片 */
+
+.bottompic {
+    width: 1200px;
+    margin: 30px auto 0;
+    height: 418px;
+}
+
+.bottompic img {
+    width: 100;
+    height: 100%;
+}
+
+
+/* 底部 */
+
+footer {
+    width: 1200px;
+    margin: 26px auto 0;
+    height: 500px;
+}
+
+
+/* 四个广告 */
+
+.guanggao {
+    overflow: hidden;
+    padding: 40px 0;
+    background-color: #fff;
+}

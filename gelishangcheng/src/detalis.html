@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/detalis.css">
+    <link rel="stylesheet" href="font/fontawesome-webfont.woff">
+</head>
+
+<body>
+    <!-- 头部div -->
+    <div class="header-top" id="header-top">
+        <!-- 中间区域 -->
+        <div class="top_mid po_re">
+            <!-- 登录 注册-->
+            <div class="top_mid_l po_re" style="margin-left: 50px">
+                <span id="top_login_id" class="mar_l10 font_fe">
+                    <a href="denglu.html">登录</a>
+                    <i class="mar_lr10 font_ec">|</i>
+                    <a href="zhuce.html">注册</a>
+                    <span></span>
+                </span>
+            </div>
+            <!--top_mid_l end-->
+        </div>
+
+    </div>
+    <!-- logo和购物车 -->
+    <div class="LOGO">
+        <div class="logocart">
+            <!-- logo -->
+            <div class="logo">
+                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/8/1169e1b4-3a02-4a0f-9491-c909d5ced0d8.gif" alt="">
+            </div>
+            <!-- 购物车 -->
+            <div class="cart">
+                <a href="gouwuche.html">购物车（<span>0</span>）</a>
+            </div>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="Nav">
+        <div class="nav" id="nav">
+            <h2 class="all">
+                <i class="demo-icons fa-list-ul" style="margin-right: 17px"></i>全部商品分类
+            </h2>
+            <!-- 商品导航列表 -->
+            <!-- 导航区域大框 -->
+
+            <ul class="navlan">
+                <li><a>精品冰洗</a></li>
+                <li><a>健康家电</a></li>
+                <li><a>夏季爆款</a></li>
+                <li><a>精品生活家电</a></li>
+                <li><a>精品空调</a></li>
+                <li><a>恒温空调</a></li>
+            </ul>
+            <!-- 导航区域显示的列表 -->
+            <ul class="list">
+                <li class="refrigerator"><span>冰箱</span>
+                    <!-- 隐藏区域部分 -->
+                    <div class="classify">
+                        <!-- 第一行 -->
+                        <div class="classify1">
+                            <h3>晶弘冰箱</h3>
+                            <!-- 后边的详细分类 -->
+                            <ul>
+                                <li>双门</li>
+                                <li>三门</li>
+                                <li>多门</li>
+                                <li>对开</li>
+                                <li>冰柜</li>
+                            </ul>
+                        </div>
+                        <!-- 第二行 -->
+                        <div class="classify2">
+                            <h3>酒柜</h3>
+                            <!-- 后边的详细分类 -->
+                            <ul>
+                                <li>酒柜</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li>洗衣机</li>
+                <li>空气能热水器</li>
+                <li>生活家电</li>
+                <li>手机</li>
+                <li>空调</li>
+                <li>中央空调</li>
+                <li>电器配件</li>
+                <li>智能家居</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 图片内容区域 -->
+    <section>
+        <div class="center">
+            <!-- 图片和小图片轮播 -->
+            <main>
+                <!-- 图片 -->
+                <div class="pic"></div>
+                <!-- 放大镜块 -->
+                <div class="fdj"></div>
+                <div class="minpic">
+                    <!-- 图片轮播区 -->
+                    <!-- 左右箭头p，ul放小图片 -->
+                    <p class="left">1</p>
+                    <ul></ul>
+                    <p class="right">2</p>
+                </div>
+                <!-- 放大镜显示区域 -->
+                <div class="bigpic"></div>
+            </main>
+            <!-- 右边详细的信息区域 -->
+            <article>
+                <!-- 物品的标题 -->
+                <h2 class="title"></h2>
+                <!-- 物品的详细介绍 -->
+                <p class="introduce"></p>
+                <!-- 用表单表示物品的信息 -->
+                <form action="" method="post" name="">
+                    <fieldset>
+                        <!-- 价格 -->
+                        <p class="table">
+                            <label for="piece">售价：</label>
+                            <span id="piece"></span>
+                        </p>
+                        <!-- 促销信息 -->
+                        <p class="table">
+                            <label for="information">促销信息：</label>
+                            <span id="information"></span>
+                        </p>
+                        <!-- <p>
+                        <label for="information">促销信息：</label>
+                        <span id="piece"></span>
+                    </p> -->
+                        <!-- 购买数量 -->
+                        <p class="table">
+                            <label for="num">数量：</label>
+                            <button class="add">+</button><input type="text" id="num" placeholder="1"><button class="sub">-</button>
+                        </p>
+                        <!-- 加入购物车和购买按钮 -->
+                        <p class="table">
+                            <button id="join" class="che">加入购物车</button><button id="buy" class="che">购买</button>
+                        </p>
+                    </fieldset>
+                </form>
+
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>

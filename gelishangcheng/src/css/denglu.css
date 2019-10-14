@@ -1,0 +1,119 @@
+/* 头部 */
+
+header {
+    width: 100%;
+    height: 110px;
+}
+
+.head {
+    width: 1200px;
+    height: 100px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+
+/* logo */
+
+.logo {
+    width: 210px;
+    height: 80px;
+    float: left;
+    padding: 5px;
+}
+
+.welcome {
+    font-size: 24px;
+    color: rgb(116, 116, 116);
+    font-family: FZLTHJW--GB1-0, Helvetica, Arial, "Microsoft Yahei", "Lantinghei SC", "Hiragino Sans GB", sans-serif;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+}
+
+
+/* 中间主要区域 */
+
+section {
+    width: 100%;
+    height: 420px;
+}
+
+main {
+    width: 980px;
+    height: 410px;
+    margin: auto;
+    /* margin: 5px; */
+    border: 1px red solid;
+}
+
+
+/* 大图片区域 */
+
+.pic {
+    width: 530px;
+    height: 380px;
+    margin: 15px 20px;
+    float: left;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 登录表区域 */
+
+.form {
+    width: 410px;
+    height: 380px;
+    float: left;
+}
+
+#formarea {
+    width: 295px;
+    height: 200px;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+#formarea ul li {
+    width: 295px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+
+/* 输入框 */
+
+.form input {
+    font-family: Microsoft Yahei;
+    color: #474747;
+    height: 35px;
+    width: 280px;
+    line-height: 35px;
+    padding-left: 15px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    border-radius: 2px;
+}
+
+
+/* 登录按钮 */
+
+.denglu {
+    background: #f00;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/* 注册按钮链接 */
+
+#zhuce {
+    color: #f00;
+    margin-left: 25px;
+}
