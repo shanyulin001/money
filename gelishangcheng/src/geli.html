@@ -14,27 +14,31 @@
 <body>
     <!-- 固定定位的右边楼层 -->
     <ul class="fixfloor">
-        <a href="#">
-            <li>回到顶部</li>
-        </a>
+
+        <!-- 871 -->
+        <li>每日精选</li>
+        <!-- 1495 -->
         <li>
             <!--fixfloor-b为正常显示，fixfloor-n鼠标悬浮显示  -->
             <span class="fixfloor-b">1F</span>
             <span class="fixfloor-n">冰箱/洗衣机</span>
         </li>
+        <!-- 2150 -->
         <li>
             <span class="fixfloor-b">2F</span>
             <span class="fixfloor-n">空气能热水器</span>
         </li>
+        <!-- 2787 -->
         <li>
             <span class="fixfloor-b">3F</span>
             <span class="fixfloor-n">厨房电器</span>
         </li>
+        <!-- 3408 -->
         <li>
             <span class="fixfloor-b">4F</span>
             <span class="fixfloor-n">生活电器</span>
         </li>
-        <li>直到底部</li>
+        <li class="last">回到顶部</li>
     </ul>
     <!-- 头部div -->
     <div class="header-top" id="header-top">
@@ -127,23 +131,18 @@
         </div>
     </div>
     <!-- 轮播图 -->
-    <div class="bannar">
+    <div class="bannar" id="Bannar">
         <!-- 大图片区 -->
-        <ul class="pic">
-            <!-- <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li> -->
-        </ul>
-        <!-- 轮播图下边的按钮 -->
-        <ol class="key">
-            <li class="active">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-        </ol>
+        <div class="screen">
+            <ul class="pic" style="left: 0;top: 0;">
+
+            </ul>
+            <!-- 轮播图下边的按钮 -->
+            <ol class="key">
+
+            </ol>
+        </div>
+
 
     </div>
     <!-- 商品区域 -->
@@ -151,7 +150,7 @@
         <!-- 热销推荐 -->
         <!-- 轮播图下边的四个小图 -->
         <main>
-            <div class="hotsale">
+            <div class="hotsale louceng">
                 <h2 class="floortittle">热销推荐</h2>
                 <ul>
 
@@ -161,7 +160,7 @@
             <!-- 商品栏 -->
             <div class="shop">
                 <!-- 标题 -->
-                <h2 class="floortittle">每日精选</h2>
+                <h2 class="floortittle louceng">每日精选</h2>
                 <ul class="shopping">
                     <!-- 左边图 -->
 
@@ -187,7 +186,7 @@
             </div>
             <!-- 1F 冰箱洗衣机 -->
             <div class="icebox">
-                <h2 class="floortittle floornumber"><span class="floornum">1F</span> 冰箱/洗衣机</h2>
+                <h2 class="floortittle floornumber louceng "><span class="floornum">1F</span> 冰箱/洗衣机</h2>
                 <div class="iceboxwash iceboxdiv">
                     <!-- 左边图 -->
                     <!-- <div class="iceboxleft">
@@ -252,20 +251,20 @@
             </div>
             <!-- 2F 空气能热水器 -->
             <div class="icebox">
-                <h2 class="floortittle floornumber"><span class="floornum">2F</span> 空气能热水器</h2>
+                <h2 class="floortittle floornumber louceng"><span class="floornum">2F</span> 空气能热水器</h2>
                 <div class="iceboxwash1 iceboxdiv">
                 </div>
             </div>
 
             <!-- 3F 厨房电器 -->
             <div class="icebox">
-                <h2 class="floortittle floornumber"><span class="floornum">3F</span> 厨房电器</h2>
+                <h2 class="floortittle floornumber louceng"><span class="floornum">3F</span> 厨房电器</h2>
                 <div class="iceboxwash2 iceboxdiv">
                 </div>
             </div>
             <!-- 4F 生活电器 -->
             <div class="icebox">
-                <h2 class="floortittle floornumber"><span class="floornum">4F</span> 生活电器</h2>
+                <h2 class="floortittle floornumber louceng"><span class="floornum">4F</span> 生活电器</h2>
                 <div class="iceboxwash3 iceboxdiv">
                 </div>
             </div>
@@ -290,12 +289,28 @@
         </main>
     </section>
     <!-- 导入js文件 -->
-    <script src="js/ajaxpromise.js"></script>
-    <script src="js/index.js"></script>
-    <!-- <script>
-        new everyday().host();
-        new everyday().bannarpic();
-    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/publicjs/jquery.color.js"></script>
+    <script src="js/publicjs/ajaxpromise.js"></script>
+    <script src="js/publicjs/move.js"></script>
+    <script src="js/publicjs/com.js"></script>
+    <script src="js/alonejs/index.js"></script>
+    <script>
+        // var gaodu = document.body.scrollTop;
+        // console.log(gaodu);
+
+
+        function getScrollTop() {
+            var scroll_top = 0;
+            if (document.documentElement && document.documentElement.scrollTop) {
+                scroll_top = document.documentElement.scrollTop;
+            } else if (document.body) {
+                scroll_top = document.body.scrollTop;
+            }
+            return scroll_top;
+        }
+        console.log(getScrollTop());
+    </script>
 
 </body>
 
