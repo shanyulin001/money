@@ -105,15 +105,17 @@
             <!-- 图片和小图片轮播 -->
             <main>
                 <!-- 图片 -->
-                <div class="pic"></div>
+                <div class="pic">
+                    <img src="" alt="" class="picimg">
+                </div>
                 <!-- 放大镜块 -->
                 <div class="fdj"></div>
                 <div class="minpic">
                     <!-- 图片轮播区 -->
                     <!-- 左右箭头p，ul放小图片 -->
-                    <p class="left">1</p>
+                    <p class="left">&lt;</p>
                     <ul></ul>
-                    <p class="right">2</p>
+                    <p class="right">&gt;</p>
                 </div>
                 <!-- 放大镜显示区域 -->
                 <div class="bigpic"></div>
@@ -144,11 +146,11 @@
                         <!-- 购买数量 -->
                         <p class="table">
                             <label for="num">数量：</label>
-                            <button class="add">+</button><input type="text" id="num" placeholder="1"><button class="sub">-</button>
+                            <i class="add" id="add">+</i><input type="text" id="num" value="1"><i class="sub">-</i>
                         </p>
                         <!-- 加入购物车和购买按钮 -->
                         <p class="table">
-                            <button id="join" class="che">加入购物车</button><button id="buy" class="che">购买</button>
+                            <i id="join" class="che">加入购物车</i><a id="buy" class="che" href="gouwuche.html">购买</a>
                         </p>
                     </fieldset>
                 </form>
@@ -156,6 +158,11 @@
             </article>
         </div>
     </section>
+
+    <script src="js/publicjs/ajaxpromise.js"></script>
+    <script src="js/publicjs/cookie.js"></script>
+    <script src="js/publicjs/move.js"></script>
+    <script src="js/alonejs/detalis.js"></script>
 </body>
 
 </html>

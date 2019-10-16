@@ -42,6 +42,27 @@ body {
 }
 
 
+/* 鼠标悬浮在li上 */
+
+
+/* 有问题 */
+
+.activefloor {
+    /* box-sizing: border-box; */
+    border: 1px solid #ed5759;
+    color: #ed5759;
+    background-color: #fdeeee;
+}
+
+.activefloor .fixfloor-n {
+    display: block;
+}
+
+.activefloor .fixfloor-b {
+    display: none;
+}
+
+
 /* 头部区域 */
 
 .header-top {
@@ -623,7 +644,6 @@ main {
     font-size: 12px;
     height: 14px;
     line-height: 14px;
-    ;
     margin-top: 2px;
     word-break: break-all;
     box-sizing: border-box;
