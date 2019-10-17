@@ -102,6 +102,12 @@ section {
     padding-bottom: 7px;
 }
 
+.qiehuan {
+    border-top: 3px solid rgb(0, 200, 108);
+    border-left: 1px solid rgb(0, 200, 108);
+    border-right: 1px solid rgb(0, 200, 108);
+}
+
 
 /* 表单区域 */
 
@@ -112,6 +118,10 @@ form {
     position: absolute;
     left: 0;
     top: 45px;
+}
+
+.emailzhuce {
+    display: none;
 }
 
 fieldset {
@@ -126,6 +136,7 @@ legend {
 
 p {
     margin: 15px 0;
+    position: relative;
 }
 
 input {
@@ -134,6 +145,7 @@ input {
     font-size: 14px;
     line-height: 40px;
     color: #333;
+    text-indent: 15px;
 }
 
 label {
@@ -144,6 +156,20 @@ label {
     height: 35px;
     line-height: 35px;
     padding-right: 10px;
+}
+
+.codeshort {
+    width: 140px;
+}
+
+.yanzhengma {
+    border: 1px solid rgb(200, 200, 208);
+    height: 42px;
+    width: 130px;
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+    top: 0px;
 }
 
 

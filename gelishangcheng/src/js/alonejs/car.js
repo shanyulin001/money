@@ -6,7 +6,7 @@ class shopcar {
             let arrnum = getcookie('cookienum').split(',');
             console.log(arrsid.length);
             for (let i = 0; i < arrsid.length; i++) {
-                this.function(arrsid[i], arrnum[i]);
+                this.function(arrsid[i], arrnum[i]); //渲染
             }
         }
     }
@@ -18,7 +18,9 @@ class shopcar {
             url: 'http://10.31.155.21/secondJavaScript/gelishangcheng/php/bannar.php',
             dataType: 'json'
         }).then(function(bannar) { //区域循环式渲染
+
             for (let i = 0; i < bannar.length; i++) {
+
                 if (bannar[i].sid === sid) {
                     let strhtml = '';
                     strhtml += `
@@ -28,7 +30,7 @@ class shopcar {
                     </li>
                     <li class="picture"><img src="${bannar[i].url}" alt=""></li>
                     <li class="shopinfor"><p class="xinxi">${bannar[i].title}</p></li>
-                    <li class="piece" class="piece1">￥${bannar[i].piece}</li>
+                    <li class="piece" class="piece1">￥<i class="jiage">${bannar[i].piece}</i></li>
                     <li class="num"><i class="add">+</i><input type="text" class="num1" value="${num}"><i class="sub">-</i></li>
                     <li class="count count1">${bannar[i].piece*num}</li>
                     <li class="do"><p class="delete">删除</p></li>
@@ -37,25 +39,33 @@ class shopcar {
                     shopping.innerHTML += strhtml;
                 }
             }
+
+
             // 获取所有商品的总价，存到数组中
             let numbe = document.querySelectorAll('.count1');
             let shuzi = [];
             for (let i = 0; i < numbe.length; i++) {
                 shuzi.push(numbe[i].innerHTML);
             }
-            console.log(shuzi);
+            // console.log(shuzi);
             //购物车商品数量加减函数
+            let asas = []; //价格数组
             let addkey = document.querySelectorAll('.add'); //加号
             let subkey = document.querySelectorAll('.sub'); //减号
             let numbers = document.querySelectorAll('.num1'); //数量
             // let piece = document.querySelectorAll('.piece1'); //单价
             let count1 = document.querySelectorAll('.count1'); //单个商品的合计
+            let jiage = document.querySelectorAll('.jiage');
+            for (let i = 0; i < jiage.length; i++) {
+                asas.push(jiage[i].innerHTML); //价格数组
+            }
             let numbb = [];
+
             for (let i = 0; i < numbers.length; i++) {
                 numbb.push(numbers[i].value);
             }
             for (let i = 0; i < numbers.length; i++) {
-                this1.addsub(addkey[i], subkey[i], numbb[i], numbers[i], count1[i], bannar[i].piece);
+                this1.addsub(addkey[i], subkey[i], numbb[i], numbers[i], count1[i], asas[i]);
             }
         });
 
