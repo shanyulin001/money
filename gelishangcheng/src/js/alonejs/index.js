@@ -1,6 +1,27 @@
 class everyday {
-    // 渲染区域
-    // 轮播图获取数据渲染的js
+    // 登录后显示用户名或者手机号
+    login() {
+            //默认登录注册框
+            let zhuce = document.querySelector('#top_login_id');
+            // 登录注册后的框
+            let denglu = document.querySelector('.top_login_l2');
+            //用户名框
+            let username = document.querySelector('.username');
+            //退出按钮
+            let exit = document.querySelector('.exit');
+            if (localStorage.getItem('xingming')) {
+                zhuce.style.display = 'none';
+                denglu.style.display = 'block';
+                username.innerHTML = localStorage.getItem('xingming');
+            }
+            exit.onclick = function() {
+                zhuce.style.display = 'block';
+                denglu.style.display = 'none';
+                localStorage.removeItem('xingming');
+            }
+        }
+        // 渲染区域
+        // 轮播图获取数据渲染的js
     bannarpic() {
             let _this = this;
             let bannararea = document.querySelector('.pic');
@@ -303,6 +324,7 @@ class everyday {
 
 
     show() { //渲染
+        this.login(); //登录前后顶部
         this.host(); //热销推荐
         this.bannarpic(); //轮播图
         this.daychoiceness(); //每日精选

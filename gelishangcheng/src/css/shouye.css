@@ -99,6 +99,21 @@ body {
 }
 
 
+/*登录后显示用户名或者手机号区域  */
+
+.top_login_l2 {
+    display: none;
+}
+
+.top_login_l2 p {
+    color: red;
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+
 /* logo和购物车 */
 
 .LOGO {
