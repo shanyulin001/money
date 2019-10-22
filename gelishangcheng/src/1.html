@@ -13,11 +13,22 @@
 </head>
 
 <body>
-    <input type="checkbox">
+    <input type="text" value="1234">
+    <input type="text" value="456">
     <script>
-        var input = document.querySelector('input');
-        if (input.checked) {
-            console.log(1);
+        var input = document.querySelectorAll('input');
+        // if (input.checked) {
+        //     console.log(1);
+        // }
+        input[0].onblur = function() {
+            if (input[0].value == 1234) {
+                console.log(this.value.length);
+                if (input[0].value !== '') {
+                    this.style.color = 'red';
+                }
+            } else {
+                this.style.color = 'green';
+            }
         }
     </script>
 </body>

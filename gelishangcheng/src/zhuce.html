@@ -8,7 +8,7 @@
     <title>注册</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/zhuce.css">
-    <link rel="stylesheet" href="font/fontawesome-webfont.woff">
+    <!-- <link rel="stylesheet" href="font/fontawesome-webfont.woff"> -->
 </head>
 
 <body>
@@ -47,67 +47,67 @@
                 <li id="tabemails">邮箱注册</li>
             </ul>
             <!-- 用户注册 -->
-            <form action="" method="post" name="" class="usezhuce">
+            <form action="http://10.31.155.21/secondJavaScript/gelishangcheng/php/zhuce.php" method="post" name="form1" class="usezhuce">
                 <fieldset>
                     <p>
                         <label for="phone"><span style="color: red">*</span>手机：</label>
-                        <input type="text" id="phone" placeholder="请输入手机" title="">
+                        <input type="text" id="phone" name="phonenum" placeholder="请输入手机" title="">
                     </p>
                     <p>
                         <label for="password"><span style="color: red">*</span>请设置密码：</label>
-                        <input type="password" id="password" placeholder="请输入6-12位密码">
+                        <input type="password" id="password" name="password" placeholder="请输入6-12位密码">
                     </p>
                     <p>
                         <label for="password0"><span style="color: red">*</span>请确认密码：</label>
-                        <input type="password" id="password0" placeholder="请再次输入密码">
+                        <input type="password" id="password0" name="password0" placeholder="请再次输入密码">
                     </p>
                     <p>
                         <label for="code"><span style="color: red">*</span>验证码：</label>
                         <input type="text" id="code" class="codeshort" placeholder="请输入验证码">
-                        <span></span>
+                        <span class="yanzhengma">1234</span>
                     </p>
                     <p><input type="checkbox" name="button1" id="button1" style="vertical-align: middle;width: 13px;height: 13px;margin-left: 180px;">
                         <label for="button1" style="width:280px;display: inline-block;font-size:12px;vertical-align: middle;">同意《格力官方商城用户注册协议》和《隐私声明》</label></p>
                     <p>
                         <label></label>
-                        <button>同意协议并注册</button>
+                        <input type="submit" value="同意协议并注册" class="submit" id="agree" name="submit">
 
                     </p>
                 </fieldset>
             </form>
             <!-- 邮箱注册 -->
-            <form action="" method="post" name="" class="emailzhuce">
+            <form action="http://10.31.155.21/secondJavaScript/gelishangcheng/php/emailzhuce.php" method="post" name="" class="emailzhuce">
                 <fieldset>
                     <p>
                         <label for="username1"><span style="color: red">*</span>用户名：</label>
-                        <input type="text" id="username1" placeholder="请输入用户名">
+                        <input type="text" id="username1" name="usename" placeholder="请输入用户名">
                     </p>
                     <p>
                         <label for="email1"><span style="color: red">*</span>邮箱：</label>
-                        <input type="text" id="email1" placeholder="请输入邮箱">
+                        <input type="text" id="email1" name="email" placeholder="请输入邮箱">
                     </p>
                     <p>
                         <label for="phone1"><span style="color: red">*</span>手机：</label>
-                        <input type="text" id="phone1" placeholder="请输入手机号码">
+                        <input type="text" id="phone1" name="phonenum1" placeholder="请输入手机号码">
                     </p>
                     <p>
                         <label for="password1"><span style="color: red">*</span>请设置密码：</label>
-                        <input type="password" id="password1" placeholder="请输入6-12位密码">
+                        <input type="password" name="password1" id="password1" placeholder="请输入6-12位密码">
                     </p>
                     <p>
                         <label for="password2"><span style="color: red">*</span>请确认密码：</label>
-                        <input type="password" id="password2" placeholder="请再次输入密码">
+                        <input type="password" id="password2" name="password2" placeholder="请再次输入密码">
                     </p>
                     <p>
                         <label for="code1"><span style="color: red">*</span>验证码：</label>
                         <input type="text" id="code1" class="codeshort" placeholder="请输入验证码">
-                        <span class="yanzhengma"></span>
+                        <span class="yanzhengma">1234</span>
                     </p>
                     <p><input type="checkbox" name="button1" id="button2" style="vertical-align: middle;width: 13px;height: 13px;margin-left: 180px;">
                         <label for="button2" style="width:280px;display: inline-block;font-size:12px;vertical-align: middle;">同意《格力官方商城用户注册协议》和《隐私声明》</label></p>
                     <p>
                         <label></label>
-                        <button>同意协议并注册</button>
+                        <input type="submit" value="同意协议并注册" class="submit" id="agree2" name="submit2">
 
                     </p>
                 </fieldset>

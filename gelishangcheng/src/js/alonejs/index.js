@@ -31,7 +31,7 @@ class everyday {
     host() {
         let hotsale = document.querySelector('.hotsale ul');
         $ajax({
-            url: 'http://10.31.155.21/secondJavaScript/gelishangcheng/php/index.php',
+            url: 'http://10.31.155.21/secondJavaScript/gelishangcheng/php/index1.php',
             dataType: 'json'
         }).then(function(information) { //information数据库表
             let strhtml = '<ul>';

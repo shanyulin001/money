@@ -162,6 +162,9 @@ label {
     width: 140px;
 }
 
+
+/* 验证码 */
+
 .yanzhengma {
     border: 1px solid rgb(200, 200, 208);
     height: 42px;
@@ -170,12 +173,15 @@ label {
     margin-left: 10px;
     position: absolute;
     top: 0px;
+    line-height: 42px;
+    font-size: 16px;
+    text-align: center;
 }
 
 
 /* 注册按钮 */
 
-button {
+.submit {
     padding: 0px 25px;
     background: #cc0000;
     text-align: center;
